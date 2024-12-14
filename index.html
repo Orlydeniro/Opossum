@@ -30,8 +30,12 @@ body {
   border: none;
   cursor: pointer;
 }
-#description {
+#video-container {
   margin: 20px auto;
+  width: 600px; /* Adjust as needed */
+}
+#video-description {
+  margin: 10px auto;
   width: 600px;
   padding: 10px;
   border: 1px solid #ccc;
@@ -57,11 +61,14 @@ body {
   </form>
 </div>
 
-<div id="description">
-  <!-- REPLACE THIS WITH SCRAPED DATA (NOT RECOMMENDED) -->
-  <h3>Arnauld Dalaye's Profile (Placeholder)</h3>
-  <p>This section would ideally contain information scraped from Arnauld Dalaye's LinkedIn profile.  However, this is not implemented due to ethical and legal concerns regarding web scraping without explicit permission.  Please replace this placeholder with appropriate content if you obtain permission and the data legally and ethically.</p>
+<div id="video-container">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/3KtWfp0UopM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
+
+<div id="video-description">
+  This video shows a cute opossum.  (Replace with a more detailed description if needed)
+</div>
+
 
 <script>
 document.getElementById('search-button').addEventListener('click', function(event) {
